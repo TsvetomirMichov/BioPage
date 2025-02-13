@@ -1,10 +1,12 @@
-*{
+* {
     background: #393939;
     color: white;
+    text-align: center;
 }
 
 .h1 {
     margin-top: 2em;
+    margin-bottom: 4em;
     font-size: 2em;
 }
 
@@ -13,11 +15,31 @@
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:2em;
+    gap: 2em;
 }
 
-.desc{
+.desc {
     font-size: 1.5em;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    border: 2px solid white;
+    padding: 5px;
+    margin-top: 5em;
+    display: inline-block;
+    animation: bounce 2s infinite;
 }
 
 .img {
@@ -30,6 +52,6 @@
     height: auto;
 }
 
-.desc{
+.desc {
     border: 0;
 }
